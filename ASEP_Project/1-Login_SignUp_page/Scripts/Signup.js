@@ -1,2 +1,3 @@
-const myForm=
+const myForm=document.getElementById("myForm");
+
 
