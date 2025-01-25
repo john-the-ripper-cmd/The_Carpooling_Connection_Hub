@@ -1,0 +1,108 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f4f4f9; */
+    background-image: url(asep1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #e7e5e5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 700px;
+    background: rgba(13,181,228,0.3);
+    backdrop-filter: blur(3px);
+    margin: 30px auto;
+    padding: 20px;
+    /* background-color: #fff; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h3 {
+    text-align: center;
+    color: #fffefe;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 5px;
+    font-weight: bold;
+  }
+  
+  .tab.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .section {
+    display: none;
+  }
+  
+  .section.active {
+    display: block;
+  }
+  
+  .input-box {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .input-box label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fffefe;
+    margin-bottom: 8px;
+  }
+  
+  .input-box input[type="radio"],
+  .input-box select {
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background-color: #fafafa;
+    width: 100%;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  

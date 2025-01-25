@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preference Page</title>
+  <link rel="stylesheet" href="Preference1.css"> 
+</head>
+<body>
+
+  <div class="container">
+    <h3>Preference Page</h3>
+    
+    <div class="tabs">
+      <button class="tab active" id="passenger-tab">Passenger Preferences</button>
+      <button class="tab" id="driver-tab">Driver Preferences</button>
+    </div>
+    
+    <div class="section active" id="passenger-preferences">
+      <form action="#">
+        <div class="input-box">
+          <label>Gender Preference:</label>
+          <div class="gender">
+            <button class="tab" id="passenger-tab">Male</button>
+            <button class="tab" id="driver-tab">Female</button>
+            <button class="tab active" id="driver-tab">Other</button>
+          </div>
+<!-- <pre><label><input type="radio" value="Male" name="Gender" id="male">Male</label><label><input type="radio" value="Female" name="Gender" id="female">Female</label><label><input type="radio" value="Random" name="Gender" id="random">Random</label></pre>         -->
+        </div>
+
+        <div class="input-box">
+          <label for="no-of-passengers">No. of Passengers:</label>
+          <select name="No. of passengers" id="no-of-passengers">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+
+        <div class="input-box">
+          <label>Prefered Car Type:</label>
+          <select name="Prefered Car Type" id="Prefered Car Type">
+            <option value="None">Not Selected</option>
+            <option value="Sedan">Sedan</option>
+            <option value="SUV">SUV</option>
+            <option value="Hatchback">Hatchback</option>
+            <option value="Minivan">Minivan</option>
+          </select>
+          <!-- <label><input type="radio" value="Sedan" name="Car type" id="sedan"> Sedan</label>
+          <label><input type="radio" value="SUV" name="Car type" id="suv"> SUV</label>
+          <label><input type="radio" value="Hatchback" name="Car type" id="hatchback"> Hatchback</label>
+          <label><input type="radio" value="Minivan" name="Car type" id="minivan"> Minivan</label> -->
+        </div>
+
+        <div class="input-box">
+          <label>Do you prefer stops?</label>
+<pre><label><input type="radio" value="Yes" name="Stops" id="yes-stops">Yes</label><label><input type="radio" value="No" name="Stops" id="no-stops">No</label></pre>
+        </div>
+
+        <div class="input-box">
+          <label>Do you prefer music?</label>
+<pre><label><input type="radio" value="Yes" name="Music" id="yes-music">Yes</label><label><input type="radio" value="No" name="Music" id="no-music">No</label></pre>
+        </div>
+      </form>
+      <label for id="Terms and Conditions">
+        <input type="checkbox" value="You agree"
+        name="Terms and Conditions" id="Terms and Conditions">You agree with our <a href="/Terms.html" target="_blank">Terms</a> and <a href="/Terms.html" target="_blank">Conditions</a>
+    </label>
+    <br>
+    <br>
+    <br>
+    </div>
+
+    <div class="section" id="driver-preferences">
+      <form action="#">
+        <div class="input-box">
+          <label>Gender Preference:</label>
+          <div class="gender">
+            <button class="tab" id="passenger-tab">Male</button>
+            <button class="tab" id="driver-tab">Female</button>
+            <button class="tab active" id="driver-tab">Other</button>
+          </div>
+<!-- <pre><label><input type="radio" value="Male" name="DriverGender" id="male-driver">Male</label><label><input type="radio" value="Female" name="DriverGender" id="female-driver">Female</label><label><input type="radio" value="Random" name="DriverGender" id="random-driver">Random</label></pre> -->
+        </div>
+
+        <div class="input-box">
+          <label for="no-of-passengers-driver">No. of Passengers:</label>
+          <select name="No. of passengers driver" id="no-of-passengers-driver">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+
+        <div class="input-box">
+          <label>Do you prefer stops?</label>
+<pre><label><input type="radio" value="Yes" name="DriverStops" id="yes-driver-stops">Yes</label><label><input type="radio" value="No" name="DriverStops" id="no-driver-stops">No</label></pre>
+        </div>
+
+        <div class="input-box">
+          <label>Do you prefer music?</label>
+<pre><label><input type="radio" value="Yes" name="DriverMusic" id="yes-driver-music">Yes</label><label><input type="radio" value="No" name="DriverMusic" id="no-driver-music">No</label></pre>  
+        </div>
+      </form>
+      <label for id="Terms and Conditions">
+        <input type="checkbox" value="You agree"
+        name="Terms and Conditions" id="Terms and Conditions">You agree with our <a href="/Terms.html" target="_blank">Terms</a> and <a href="/Terms.html" target="_blank">Conditions</a>
+    </label>    
+    <br>
+    <br>
+    <br>
+    </div>
+
+    <div class="input-box">
+      <input type="submit" value="Submit Preferences">
+    </div>
+  </div>
+
+  <script>
+     // Get all gender tab buttons
+  const genderTabs = document.querySelectorAll('.tab');
+
+// Function to remove the 'active' class from all buttons
+function removeActiveClass() {
+  genderTabs.forEach(tab => {
+    tab.classList.remove('active');
+  });
+}
+
+// Add event listeners for each button
+genderTabs.forEach(tab => {
+  tab.addEventListener('click', function() {
+    // Remove the 'active' class from all buttons
+    removeActiveClass();
+    
+    // Add the 'active' class to the clicked button
+    this.classList.add('active');
+  });
+});
+    document.getElementById('passenger-tab').addEventListener('click', function() {
+      document.getElementById('passenger-preferences').classList.add('active');
+      document.getElementById('driver-preferences').classList.remove('active');
+      document.getElementById('passenger-tab').classList.add('active');
+      document.getElementById('driver-tab').classList.remove('active');
+    });
+
+    document.getElementById('driver-tab').addEventListener('click', function() {
+      document.getElementById('driver-preferences').classList.add('active');
+      document.getElementById('passenger-preferences').classList.remove('active');
+      document.getElementById('driver-tab').classList.add('active');
+      document.getElementById('passenger-tab').classList.remove('active');
+    });
+  </script>
+
+</body>
+</html>
