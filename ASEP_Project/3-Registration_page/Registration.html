@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Registration Page</title>
+    <link href="CSS/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="tab-container">
+            <div class="tab-header">
+                <button class="tab-btn active" data-tab="driver">Driver</button>
+                <button class="tab-btn" data-tab="passenger">Passenger</button>
+            </div>
+            <br>
+
+            <div id="driver" class="tab-content active">
+                <form action="#">
+                    <h1>Driver Registration</h1>
+                    <br>
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter Vehicle's No. Plate" required>
+                    </div>
+                    <br>
+                    <div class="input-box">
+                        <input type="number" placeholder="Enter No. of seats available in the car" required>
+                    </div>
+                    <br>
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter the Name of the Car" required>
+                    </div>
+                    <br>
+                    <div class="input-box">
+                        <label for="file-upload" class="custom-file-upload">Upload Character Certificate</label>
+                        <input id="file-upload" type="file" name="file" />
+                    </div>
+                    <br>
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter Your Destination" required>
+                    </div>
+                    <br>   
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter Drop Location" required>
+                    </div>
+                    <br>    
+                    <p>Enter Date</p>      
+                    <div class="input-box">
+                        <input type="date"required>
+                    </div>
+                    <br>   
+                    <p>Enter Time</p>      
+                    <div class="input-box">
+                        <input type="Time"required>
+                    </div>
+                    <br>       
+                    <button type="submit" class="btn">Create a Carpool</button>
+                </form>
+            </div>
+
+            <div id="passenger" class="tab-content">
+                <form action="#">
+                    <h1>Passenger Registration</h1>
+                    <br>
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter Your Destination" required>
+                    </div>
+                    <br>
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter Your Pick Up Location" required>
+                    </div>
+                    <br>
+                    <p>Enter Date</p>
+                    <div class="input-box">
+                        <input type="date" placeholder="Enter Date" required>
+                    </div>
+                    <br>
+                    <p>Enter Time</p>
+                    <div class="input-box">
+                        <input type="time" placeholder="Time" required placeholder="Enter Time">
+                    </div>
+                    <br>
+                    <button type="submit" class="btn">Register as Passenger</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="Script/script.js">
+        
+    </script>
+</body>
+</html>
