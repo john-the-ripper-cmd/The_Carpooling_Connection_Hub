@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpooling: A Sustainable Choice</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway', sans-serif;
+            color: #fff;
+            height: 100%;
+            position: relative; 
+        }
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        .video-background video {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .container {
+            position: relative;
+            z-index: 1;
+            background-color: rgba(93, 2, 2, 0.4); 
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem auto;
+            max-width: 1200px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            border: 2px solid #fff; 
+            overflow: hidden; 
+        }
+        .navbar {
+            display: flex;
+            justify-content: flex-end; 
+            align-items: center;
+            margin-bottom: 2rem; 
+        }
+
+        .logo {
+            width: 50px;
+            height: auto;
+            cursor: pointer; 
+            margin-right: 20px;
+        }
+
+        .nav-links {
+            display: none; 
+            gap: 15px;
+            align-items: center; 
+        }
+
+        .nav-link {
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 1rem;
+            display: flex; 
+            align-items: center; 
+        }
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            font-size: 3rem; 
+            font-weight: 600;
+            opacity: 0;
+            transform: translateY(20px); 
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            color: #ffcc00; 
+        }
+        main {
+            padding: 1rem 0;
+        }
+
+        main h2 {
+            color: #ffcc00;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            opacity: 0;
+            transform: translateY(20px); 
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        main p {
+            font-size: 1rem;
+            line-height: 1.6;
+            opacity: 0; 
+            transform: translateY(20px); 
+            transition: opacity 0.5s ease, transform 0.5s ease; 
+        }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            margin-top: 2rem;
+            font-size: 0.9rem; 
+            color: #ffcc00; 
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .next-page-button {
+            margin-top: 1rem; 
+            background-color: #f4c509; 
+            color: #fff; 
+            border: none;
+            border-radius: 25px; 
+            padding: 12px 25px; 
+            font-size: 1.1rem;
+            font-weight: bold; 
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            transition: background-color 0.3s ease, transform 0.2s ease; 
+        }
+        .next-page-button:hover {
+            background-color: #e6b800; 
+            transform: translateY(-2px); 
+        }
+        .welcome-message {
+            display: none; 
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 2rem;
+            opacity: 0;
+            transform: translateY(20px); 
+            transition: opacity 0.5s ease, transform 0.5s ease; 
+        }
+    </style>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="container">
+        <div class="navbar">
+            <img src="logo.png" alt="Logo" class="logo" id="logo"> 
+            <div class="nav-links" id="navLinks">
+                <a href="../1-Login_SignUp_page/loginpage1.html" class="nav-link" id="loginLink"> Login</a> 
+                <a href="../1-Login_SignUp_page/signup.html" class="nav-link">Signup</a>
+            </div>
+        </div>
+        <nav>
+            <center>
+                <h1>The Carpooling Connection Hub...</h1>
+            </center>
+        </nav>
+        <main>
+            <section id="pollution-control">
+                <h2>What Is Carpooling?</h2>
+                <p>Carpooling is the practice of sharing a ride with other people who are traveling to the same or a nearby destination. This usually involves a group of individuals using one vehicle to travel together, rather than each person driving their own car separately. Carpooling can involve colleagues, friends, or even strangers who share common travel routes.</p>
+            </section>
+            <section id="carbon-footprint">
+                <h2>Our Mission</h2>
+                <p>The mission of carpooling is rooted in creating a sustainable transportation system that addresses the challenges of modern urban living. At its core, it seeks to reduce environmental impact by decreasing the number of vehicles on the road, thereby cutting fuel consumption and emissions. By leveraging shared resources, carpooling aligns with the global effort to combat climate change and conserve energy. It also aims to make commuting more cost-effective and accessible for individuals, ensuring that transportation is not only efficient but equitable.</p>
+                <p>Moreover, carpooling's mission extends to fostering stronger social connections and promoting a culture of collaboration. By encouraging people to travel together, it builds trust and community among strangers, colleagues, or neighbors. It seeks to transform the daily commute from a solitary, stressful chore into a shared, productive experience. Through innovation and shared responsibility, carpooling aims to make cities more livable and create a foundation for sustainable development.</p>
+            </section>
+            <section id="vision">
+                <h2>Our Vision</h2>
+                <p>The vision of carpooling is to create a future where sustainable transport options are widely adopted, leading to cleaner air and reduced traffic congestion. It aims to inspire a cultural shift towards shared mobility, where individuals recognize the benefits of traveling together and the impact it has on the environment.</p>
+                <p>Moreover, carpooling's vision extends to fostering stronger social connections and promoting a culture of collaboration. By encouraging people to travel together, it builds trust and community among strangers, colleagues, or neighbors. It seeks to transform the daily commute from a solitary, stressful chore into a shared, productive experience. Through innovation and shared responsibility, carpooling aims to make cities more livable and create a foundation for sustainable development.</p>
+            </section>     
+        </main>
+        <div id="welcomeMessage" class="welcome-message">
+            <button id="nextPageButton" class="next-page-button"><a preventdefault src="../1-Login_SignUp_page/signup.html">Let's Carpool...</a></button>
+        </div>
+        <footer>
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 2rem; padding: 1rem 0; border-top: 1px solid rgba(255, 255, 255, 0.3);">
+                <div style="flex: 1; min-width: 200px; margin: 10px;">
+                    <h3 style="color: #ffcc00; font-size: 1.2rem; margin-bottom: 10px;">Top Carpool Routes</h3>
+                    <ul style="list-style-type: none; padding: 0; margin: 0; color: #fff;">
+                        <li>Delhi → Chandigarh</li>
+                        <li>Mumbai → Pune</li>
+                        <li>Kanpur → Lucknow</li>
+                        <li>Bengaluru → Chennai</li>
+                        <li>Pune → Mumbai</li>
+                    </ul>
+                </div>
+                <div style="flex: 1; min-width: 200px; margin: 10px;">
+                    <h3 style="color: #ffcc00; font-size: 1.2rem; margin-bottom: 10px;">Language</h3>
+                    <p style="color: #fff;">English (India)</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <h3 style="color: #ffcc00; font-size: 1.2rem; margin-bottom: 10px;">Know More About Us At</h3>
+                <div style="display: flex; justify-content: center; gap: 15px;">
+                    <a href="https://www.youtube.com" target="_blank" style="text-decoration: none;">
+                        <img src="https://www.freeiconspng.com/uploads/hd-youtube-logo-png-transparent-background-20.png" alt="YouTube" style="width: 40px; height: auto;">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" style="text-decoration: none;">
+                        <img src="https://i0.wp.com/blog.whitneydawnmusic.com/wp-content/uploads/2017/09/insta-logo.png?ssl=1" alt="Instagram" style="width: 40px; height: auto;">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank" style="text-decoration: none;">
+                        <img src="https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-4.png" alt="Twitter" style="width: 40px; height: auto;">
+                    </a>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem; color: #ffcc00; font-size: 0.9rem;">
+                © 2024 The Carpooling Connection Hub...
+            </div>
+        </footer>
+    <script>
+        const logo = document.getElementById('logo');
+        const navLinks = document.getElementById('navLinks');
+        let timeout;
+
+        logo.addEventListener('mouseenter', () => {
+            navLinks.style.display = 'flex'; 
+            logo.style.display = 'none'; 
+            clearTimeout(timeout); 
+            timeout = setTimeout(() => {
+                navLinks.style.display = 'none'; 
+                logo.style.display = 'block'; 
+            }, 5000);
+        });
+        navLinks.addEventListener('mouseenter', () => {
+            clearTimeout(timeout); 
+        });
+        navLinks.addEventListener('mouseleave', () => {
+            timeout = setTimeout(() => {
+                navLinks.style.display = 'none'; 
+                logo.style.display = 'block'; 
+            }, 5000);
+        });
+        document.getElementById('nextPageButton').addEventListener('click', () => {
+            window.location.href = '../1-Login_SignUp_page/signup.html'; 
+        });
+        window.addEventListener('load', () => {
+            const elementsToAnimate = [
+                { element: document.querySelector('h1'), delay: 0 }, 
+                { element: document.querySelector('#pollution-control h2'), delay: 1000 }, 
+                { element: document.querySelector('#pollution-control p'), delay: 2000 }, 
+                { element: document.querySelector('#carbon-footprint h2'), delay: 3000 }, 
+                { element: document.querySelector('#carbon-footprint p:nth-of-type(1)'), delay: 4000 }, 
+                { element: document.querySelector('#carbon-footprint p:nth-of-type(2)'), delay: 5000 }, 
+                { element: document.querySelector('#vision h2'), delay: 6000 }, 
+                { element: document.querySelector('#vision p:nth-of-type(1)'), delay: 7000 }, 
+                { element: document.querySelector('#vision p:nth-of-type(2)'), delay: 8000 }  
+            ];
+            elementsToAnimate.forEach(({ element, delay }) => {
+                if (element) {
+                    setTimeout(() => {
+                        element.style.opacity = 1; 
+                        element.style.transform = 'translateY(0)'; 
+                    }, delay);
+                }
+            });
+            const welcomeMessage = document.getElementById('welcomeMessage');
+            setTimeout(() => {
+                welcomeMessage.style.display = 'block';
+                welcomeMessage.style.opacity = 1; 
+                welcomeMessage.style.transform = 'translateY(0)'; 
+            }, 9000); 
+        });
+    </script>
+</body>
+</html>
